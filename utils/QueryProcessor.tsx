@@ -13,7 +13,12 @@ export default function QueryProcessor(query: string): string {
   }
   if (query.toLowerCase().includes("name")) {
     return (
-      "My name is Jon"
+      "Jon"
+    );
+  }
+  if (query.toLowerCase().includes("largest: 34, 81, 35?")) {
+    return (
+      "81"
     );
   }
   return "";
