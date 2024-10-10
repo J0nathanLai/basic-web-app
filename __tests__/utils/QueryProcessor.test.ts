@@ -53,14 +53,14 @@ describe("QueryProcessor", () => {
           ));
     });
     test('should add', () => {
-        const query = "1 plus 2";
+        const query = "What is 1 plus 2?";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
             "3"
           ));
     });
     test('should multiply', () => {
-        const query = "1 multiplied by 10";
+        const query = "What is 1 multiplied by 10?";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
             "10"
