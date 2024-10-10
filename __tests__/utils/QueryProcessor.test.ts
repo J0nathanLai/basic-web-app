@@ -31,5 +31,26 @@ describe("QueryProcessor", () => {
             "Jon"
           ));
     });
+    test('should return Name description', () => {
+        const query = "largest: 34, 81, 35?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "81"
+          ));
+    });
+    test('should return Name description', () => {
+        const query = "86 plus 8?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "94"
+          ));
+    });
+    test('should return Name description', () => {
+        const query = "44 plus 69?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "113"
+          ));
+    });
 
 });

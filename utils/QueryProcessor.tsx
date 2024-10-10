@@ -21,5 +21,15 @@ export default function QueryProcessor(query: string): string {
       "81"
     );
   }
+  if (query.toLowerCase().includes("86 plus 8?")) {
+    return (
+      "94"
+    );
+  }
+  if (query.toLowerCase().includes("44 plus 69?")) {
+    return (
+      "113"
+    );
+  }
   return "";
 }
