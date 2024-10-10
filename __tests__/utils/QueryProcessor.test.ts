@@ -28,7 +28,7 @@ describe("QueryProcessor", () => {
         const query = "name";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
-            "My name is Jon"
+            "Jon"
           ));
     });
 
