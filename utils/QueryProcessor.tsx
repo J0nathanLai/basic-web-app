@@ -37,6 +37,12 @@ export default function QueryProcessor(query: string): string {
     const y: number = parseInt(addMatch[2]);
     return (x+y).toString();
   }
+  const timesMatch = query.match(/What is (\+d) multiplied by (\+d)?/);
+  if (timesMatch) {
+    const x: number = parseInt(timesMatch[1]);
+    const y: number = parseInt(timesMatch[1]);
+    return (x*y).toString();
+  }
 
   return "";
 }
