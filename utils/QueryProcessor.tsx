@@ -31,13 +31,13 @@ export default function QueryProcessor(query: string): string {
       "113"
     );
   }
-  const addMatch = query.match(/What is (\+d) plus (\+d)?/);
+  const addMatch = query.match(/(\+d) plus (\+d)/);
   if (addMatch) {
     const x: number = parseInt(addMatch[1]);
     const y: number = parseInt(addMatch[2]);
     return (x+y).toString();
   }
-  const timesMatch = query.match(/What is (\+d) multiplied by (\+d)?/);
+  const timesMatch = query.match(/(\+d) multiplied by (\+d)/);
   if (timesMatch) {
     const x: number = parseInt(timesMatch[1]);
     const y: number = parseInt(timesMatch[1]);
